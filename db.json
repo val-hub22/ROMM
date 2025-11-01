@@ -1,0 +1,89 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "admin@romm.com",
+      "name": "Administrador ROMM",
+      "rol": "admin",
+      "role": "admin",
+      "empresa_id": 1,
+      "password": "admin123",
+      "permissions": ["all"]
+    },
+    {
+      "id": "2",
+      "email": "empleado@romm.com",
+      "name": "Juan Pérez",
+      "rol": "empleado",
+      "role": "empleado",
+      "empresa_id": 1,
+      "password": "empleado123",
+      "permissions": ["view_products", "read_products", "view_alerts"]
+    }
+  ],
+  "products": [
+    {
+      "id": "2",
+      "nombre": "Mouse Inalámbrico Logitech",
+      "categoria": "Tecnología",
+      "proveedor": "Logitech",
+      "precio": 29.99,
+      "stock": 3,
+      "stock_minimo": 10,
+      "empresa_id": 1
+    },
+    {
+      "id": "3",
+      "nombre": "Teclado Mecánico RGB",
+      "categoria": "Tecnología",
+      "proveedor": "Razer",
+      "precio": 89.99,
+      "stock": 15,
+      "stock_minimo": 5,
+      "empresa_id": 1
+    },
+    {
+      "nombre": "Auriculares",
+      "categoria": "Tecnología",
+      "proveedor": "Coradir",
+      "precio": 5000,
+      "stock": 0,
+      "stock_minimo": 10,
+      "empresa_id": 1,
+      "id": "f6f9"
+    }
+  ],
+  "proveedores": [
+    {
+      "nombre": "Razer Distribuidores",
+      "contacto": "María García",
+      "telefono": "+54 11 8765-4321",
+      "email": "info@razer.com.ar",
+      "direccion": "Florida 567, CABA",
+      "categoria": "Tecnología",
+      "activo": false,
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "nombre": "Office Supplies S.A.",
+      "contacto": "Carlos Rodríguez",
+      "telefono": "+54 11 5555-9999",
+      "email": "ventas@officesupplies.com",
+      "direccion": "Lavalle 789, CABA",
+      "categoria": "Oficina",
+      "activo": true
+    }
+  ],
+  "movements": [
+    {
+      "id": 1,
+      "product_id": "2",
+      "type": "entrada",
+      "quantity": 10,
+      "date": "2024-01-15",
+      "user_id": "1",
+      "notes": "Compra inicial"
+    }
+  ]
+}
