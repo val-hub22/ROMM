@@ -9,7 +9,7 @@ const Login = ({ onLogin, onNavigate, darkMode, toggleDarkMode }) => {
   const [showPassword, setShowPassword] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0); 
     document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light');
   }, [darkMode]);
 
